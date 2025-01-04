@@ -18,7 +18,7 @@ export default function Player() {
   // 这里就懒得做骨架屏了
   if (!data) return null;
 
-  const bangumiData = data.data.find(bangumi => normalizePath(bangumi.bangumi_name) === params.bangumi);
+  const bangumiData = data.data.find(bangumi => normalizePath(bangumi.bangumi_name) === params['*']);
 
   if (!bangumiData) return <div>加载播放器出错，数据不存在</div>;
 

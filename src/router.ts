@@ -7,12 +7,12 @@ export type Path =
   | `/`
   | `/about`
   | `/calendar`
-  | `/player/:bangumi`
+  | `/player/*`
   | `/resource`
   | `/subscribe`
 
 export type Params = {
-  '/player/:bangumi': { bangumi: string }
+  '/player/*': { '*': string }
 }
 
 export type ModalPath = never
